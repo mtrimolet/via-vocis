@@ -13,7 +13,8 @@ add_repositories("tapzcrew-repo https://github.com/tapzcrew/xmake-repo main")
 --     shared = true,
 --   }
 -- })
-add_requires("ftxui main", { configs = { modules = true } })
+--                  v     last commit before the "Big Rename" breaking commit
+add_requires("ftxui 2f59e5f6f154d040353fad0b1c7c5bff141a6f97", { configs = { modules = true } })
 
 target("via-vocis-cli", function()
   set_languages("c++26")
